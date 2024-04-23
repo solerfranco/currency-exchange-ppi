@@ -1,0 +1,18 @@
+@import '@/mixins/colors';
+
+.header {
+    padding: 20px 0;
+    padding-left: 50px;
+    background-color: $secondary;
+}
+
+.logo {
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+
+    > a {
+        color: $light;
+        text-decoration: none;
+    }
+}

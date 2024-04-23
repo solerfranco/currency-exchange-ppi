@@ -1,0 +1,31 @@
+@import "./colors.scss";
+
+@mixin field {
+    background: $light;
+    color: $dark;
+
+    border-radius: 4px;
+    outline:1px #CCCCCC solid;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:focus {
+        outline: 2px $primary solid;
+    }
+}
+
+@mixin field-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@mixin field-label {
+    font-weight: 600;
+    color: $dark;
+    font-size: 1rem;
+}

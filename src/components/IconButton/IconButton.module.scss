@@ -1,0 +1,22 @@
+@import '@/mixins/colors';
+
+.button {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: $light;
+    border: 1px solid $button-border;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:active {
+        background-color: $active;
+    }
+
+    &:disabled {
+        background-color: $disabled;
+    }
+}
